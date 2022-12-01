@@ -206,7 +206,7 @@ class SiteController extends Controller
         $imgWidth = explode('x',$size)[0];
         $imgHeight = explode('x',$size)[1];
         $text = $imgWidth . '×' . $imgHeight;
-        $fontFile = realpath('assets/font') . DIRECTORY_SEPARATOR . 'RobotoMono-Regular.ttf';
+        $fontFile = realpath('core/public/core/public/core/public/assets/font') . DIRECTORY_SEPARATOR . 'RobotoMono-Regular.ttf';
         $fontSize = round(($imgWidth - 50) / 8);
         if ($fontSize <= 9) {
             $fontSize = 9;

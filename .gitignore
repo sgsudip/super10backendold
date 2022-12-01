@@ -1,3 +1,5 @@
 .env
 vendor/
 awsenvironment.env
+.env.local
+.env.prod
