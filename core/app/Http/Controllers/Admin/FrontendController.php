@@ -169,7 +169,7 @@ class FrontendController extends Controller
 
     protected function storeImage($imgJson,$type,$key,$image,$imgKey,$old_image = null)
     {
-        $path = 'core/public/assets/images/frontend/' . $key;
+        $path = 'assets/images/frontend/' . $key;
         if ($type == 'element' || $type == 'content') {
             $size = @$imgJson
             ->$imgKey->size;
@@ -190,7 +190,7 @@ class FrontendController extends Controller
         $key = explode('.', @$frontend->data_keys)[0];
         $type = explode('.', @$frontend->data_keys)[1];
         if (@$type == 'element' || @$type == 'content') {
-            $path = 'core/public/assets/images/frontend/' . $key;
+            $path = 'assets/images/frontend/' . $key;
             $imgJson = @getPageSections()->$key->$type->images;
             if ($imgJson) {
                 foreach ($imgJson as $imgKey => $imgValue) {
